@@ -555,6 +555,19 @@ background: rgba(0,0,0,0.8);
 .w-100{
     width: 145%!important;
 }
+.widget{
+   margin:60px 0;
+   font-size: 13px;
+}
+.weigts-img{
+    width:80px;
+}
+.off-canvas-content{
+    padding: 40px;
+}
+.widget-recent-works > ul {
+    margin: 0 -4px;
+}
 
 
 
