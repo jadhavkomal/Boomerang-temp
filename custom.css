@@ -9,6 +9,12 @@ body{
         font-weight: 400;
         line-height:1.8;
 }
+.container{
+        max-width: 1170px;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+}
 .navbar{
         padding-top: 0;
         padding-bottom: 0;
@@ -22,7 +28,7 @@ body{
         font-size: 14px;
         font-weight:600;
         padding: 0 7px;
-        line-height: 80px;
+        /*line-height: 80px;*/
 }
 .nav-item{
         padding: 0 10px;
@@ -31,6 +37,7 @@ body{
         border-left: 1px solid rgba(255, 255, 255, .1);
         padding: 0 0 0 15px;
         height: 80px;
+        line-height: 80px;
 }
 .sidenav {
         height: 100%;
@@ -94,7 +101,7 @@ body{
         display: block;
         height: 1px;
         width: 20px;
-        bottom: -1px;
+        bottom: -28px;
         left:0;
         right: 0;
         margin: 0 auto;
@@ -497,8 +504,138 @@ a.work-link:hover{
 .footer-inner-link{
         padding: 22px 0;
 }
+.navbar-item{
+    display: inline-block;
+}
+.shop-cart{
+position: absolute;
+    top: -59px;
+    right: 70px;
+  
+    
+}
 
-/*@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}*/
+@media(max-width: 991px){
+    ul.navbar-nav{
+        background: #222;
+ 
+    }
+    .navbar ul li.navbar-item{
+        line-height:1.5;
+    }
+    h1.banner-heading{
+        font-size: 50px;
+        }
+        .shop-cart{
+            top:6px;
+            font-size:17px;
+            right: 70px;
+            color:#222;
+        }
+        .shop-cart:hover{
+            color: rgba(34, 34, 34, .65);
+        }
+       .shop-cart{
+            border-left: 1px solid rgba(240, 240, 240, .8); 
+            
+            height: 50px;
+            line-height: 50px;
+            padding-left: 10px;
+          
+        }
+        .navbar.opaque-navbar{
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .opaque-navbar .navbar-nav .nav-link:after{
+            display: none;
+        }
+        #main span{
+            display: none;
+        }
+        .navbar-item{
+            display: none;
+        }
+        .nav-item{
+            padding: 10px 0;
+        }
+       
+        .navbar-toggler{
+            border:none;
+            font-size: 17px;
+            color: #222;
+        }
+        .navbar-light .navbar-brand{
+            color: #222;
+             padding-left: 15px;
+        }
+        .navbar-light .navbar-brand:hover{
+            color: #222;
+            
+        }
+        button:focus{
+            outline: none;
+        }
+        .navbar-toggler:hover{
+            border: none;   
+        }
+        .opaque-navbar{
+           height: auto;
+            background-color: #fff;
+            padding: 10px 0;
+        }
+        
+        .opaque-navbar.opaque{
+           height: auto;
+           background-color: #fff;
+           padding:0;
+          
+        }
+        .opaque-navbar.opaque .nav-link{
+           
+        }
+        .opaque-navbar.opaque .nav-item a{
+            line-height: 1.5;
+            color: #fff;
+        }
+        .opaque-navbar.opaque .nav-item a:hover{
+            color:rgba(255, 255, 255, .7);
+        }
+        .opaque-navbar.opaque .nav-item.active a{
+            color: #fff;
+        }
+        .opaque-navbar.opaque .nav-item.active a:hover{
+            color: rgba(255, 255, 255, .7);
+        }
+        .opaque-navbar.opaque .shop-cart{
+            height: 40px;
+            line-height: 35px;
+        }
+    }
+    @media (max-width: 768px){
+        .work-us{
+            max-width:500px;
+            margin: auto;
+        }   
+        .work-content p.text-muted{
+            max-width: 100%;
+        }
+        .footer-content .content-text p.text-muted{
+          max-width: none;
+         
+          
+        }
+    }
+    @media (max-width: 543px){
+        .work-img{
+            max-width: 100%;
+            text-align: center;
+        } 
+        h1.banner-heading{
+            font-size: 40px;
+        }
+    }
+ 
+    
+   
+

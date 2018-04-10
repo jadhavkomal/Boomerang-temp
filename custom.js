@@ -9,11 +9,19 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "400px";
     document.getElementById("main").style.marginLeft = "0";
+    /*setTimeout(function(){
+      mySidenav .classList.add("opened");
+    }, 6000);*/
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+  /* setTimeout(function(){
+       mySidenav . classList.remove("opened");
+    }, 600);*/
 }
+
+
 
   
