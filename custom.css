@@ -41,15 +41,21 @@ body{
 }
 .sidenav {
         height: 100%;
-        width: 0;
+        width: 400px;
         position: fixed;
         z-index: 1;
         top: 0;
-        right: -17px;
+        right: -417px;
         background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
+        overflow-y: scroll;
+        margin-right: -16px;
+            
+}
+.sidenav.active-nav-menu {
+    right: 0;
 }
 .sidenav a {
         padding: 8px 8px 8px 32px;
@@ -69,9 +75,16 @@ body{
         font-size: 36px;
         margin-left: 50px;
 }
-#main {
-        transition: margin-left .5s;
+#main i{
+    font-size: 17px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
 }
+#main i:hover{
+        color: rgba(255, 255, 255, .7);
+}
+
 .opaque-navbar {
         background-color: transparent;
         height: 80px;
@@ -152,10 +165,10 @@ body{
 .opaque-navbar.opaque .nav-item a:hover{
         color:rgba(34, 34, 34, .65);
 }
-.opaque-navbar.opaque #main span{
+.opaque-navbar.opaque #main i{
         color:#222;
 }
-.opaque-navbar.opaque #main span:hover{
+.opaque-navbar.opaque #main i:hover{
         color: rgba(34, 34, 34, .65);
 }
 .w-100{
@@ -202,15 +215,8 @@ body{
         font-size: 14px;
         font-weight: 400;
 }
-#main span{
-        padding: 0 11px;
-        line-height: 60px;
-        color: #fff;
-        font-weight: 500;
-}
-#main span:hover{
-        color: rgba(255, 255, 255, .7);
-}
+
+
 a{
         transition: all .3s ease-in-out
 }
@@ -550,7 +556,7 @@ position: absolute;
         .opaque-navbar .navbar-nav .nav-link:after{
             display: none;
         }
-        #main span{
+        #main i{
             display: none;
         }
         .navbar-item{
